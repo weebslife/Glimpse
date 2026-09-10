@@ -133,7 +133,7 @@ struct MirrorSettingsHUD: View {
                 Toggle(isOn: $settings.isEdgeLightEnabled) {
                     HStack(spacing: 8) {
                         Image(systemName: "sun.max.fill")
-                        Text("FaceTime Edge Light")
+                        Text("Edge Light")
                     }
                     .font(.system(size: 12, weight: .medium))
                     .foregroundColor(.white)

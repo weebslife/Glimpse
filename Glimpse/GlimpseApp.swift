@@ -58,7 +58,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         mirrorItem.state = settings.isMirrored ? .on : .off
         menu.addItem(mirrorItem)
         
-        let edgeLightItem = NSMenuItem(title: "FaceTime Edge Light", action: #selector(toggleEdgeLight), keyEquivalent: "")
+        let edgeLightItem = NSMenuItem(title: "Edge Light", action: #selector(toggleEdgeLight), keyEquivalent: "")
         edgeLightItem.target = self
         edgeLightItem.state = settings.isEdgeLightEnabled ? .on : .off
         menu.addItem(edgeLightItem)
