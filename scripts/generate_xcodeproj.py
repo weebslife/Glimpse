@@ -30,6 +30,7 @@ def main():
 		100000000000000000000011 /* MirrorSettingsHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* MirrorSettingsHUD.swift */; };
 		100000000000000000000012 /* FullScreenEdgeLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000014 /* FullScreenEdgeLightView.swift */; };
 		100000000000000000000013 /* FullScreenEdgeLightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000015 /* FullScreenEdgeLightController.swift */; };
+		100000000000000000000014 /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* UpdateChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@ def main():
 		200000000000000000000013 /* MirrorSettingsHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorSettingsHUD.swift; sourceTree = "<group>"; };
 		200000000000000000000014 /* FullScreenEdgeLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenEdgeLightView.swift; sourceTree = "<group>"; };
 		200000000000000000000015 /* FullScreenEdgeLightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenEdgeLightController.swift; sourceTree = "<group>"; };
+		200000000000000000000016 /* UpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@ def main():
 			isa = PBXGroup;
 			children = (
 				200000000000000000000003 /* SystemSettings.swift */,
+				200000000000000000000016 /* UpdateChecker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@ def main():
 				100000000000000000000011 /* MirrorSettingsHUD.swift in Sources */,
 				100000000000000000000012 /* FullScreenEdgeLightView.swift in Sources */,
 				100000000000000000000013 /* FullScreenEdgeLightController.swift in Sources */,
+				100000000000000000000014 /* UpdateChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

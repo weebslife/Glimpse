@@ -22,6 +22,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         setupStatusItem()
         edgeLightController = FullScreenEdgeLightController.shared
         windowController = MirrorWindowController(cameraManager: cameraManager)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            UpdateChecker.shared.checkForUpdates(silent: true)
+        }
     }
     
     private func setupStatusItem() {
@@ -103,6 +106,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         
         menu.addItem(NSMenuItem.separator())
         
+        let updateItem = NSMenuItem(title: "Check for Updates...", action: #selector(checkForUpdates), keyEquivalent: "")
+        updateItem.target = self
+        menu.addItem(updateItem)
+        
         let toggleItem = NSMenuItem(title: "Toggle Glimpse", action: #selector(toggleMirrorWindow), keyEquivalent: "")
         toggleItem.target = self
         menu.addItem(toggleItem)
@@ -112,6 +119,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(quitItem)
         
         return menu
+    }
+    
+    @objc private func checkForUpdates() {
+        UpdateChecker.shared.checkForUpdates(silent: false)
     }
     
     @objc private func toggleMirrorReflection() {
