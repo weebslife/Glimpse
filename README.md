@@ -84,7 +84,7 @@ Just a quick glimpse.
 > Releases will be available here once the first version is published.
 
 <p align="center">
-  <a href="https://github.com/YOUR_USERNAME/glimpse/releases/latest">
+  <a href="https://github.com/weebslife/glimpse/releases/latest">
     <img
       width="200"
       src="https://img.shields.io/badge/Download%20for%20Mac-000000?style=for-the-badge&logo=apple&logoColor=white"
