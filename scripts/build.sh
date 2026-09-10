@@ -6,12 +6,11 @@ cd "$DIR"
 
 echo "🔨 Building Glimpse for macOS..."
 
-export DEVELOPER_DIR="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Developer}"
-
-"$DEVELOPER_DIR/usr/bin/xcodebuild" \
+xcodebuild \
   -project Glimpse.xcodeproj \
   -target Glimpse \
   -configuration Release \
+  CODE_SIGN_IDENTITY="-" \
   build
 
 echo "✅ Build complete! App is ready at:"
